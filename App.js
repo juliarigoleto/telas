@@ -1,6 +1,6 @@
 // //npm install -g npm@10.5.0 (caso precise instalar de novo)
 
-// //https://snack.expo.dev/
+// //https://snack.expo.dev/  login:julia.rigoleto j.R!golet0
 
 // import React from "react";
 // import {View, Text} from "react-native"; // todos os componentes que forem utilizados tem que dar import antes (ex. botão)
@@ -19,6 +19,7 @@
 // export default App; // poderia ter antes da function
 
 // //export indica que a função será executado
+
 // //export default app assim que alguém mandar executar o app, essa função será executada
 // //depois do export pode ter outra função
 // //o export também pde ser colocado na frente de uma função. Ex: export function app()
@@ -55,6 +56,7 @@ class App extends Component{ //pega as características do componente
           {/* <MinhaImage /> */}
           {/* Passando propriedades: a largura e a altura */}
           {/* <MinhaImage largura={400} altura{400} nome="Image 1"/> */}
+          {/*posso chamar o mesmo componente várias vezes*/}
         </View> 
       );
   }
@@ -65,8 +67,8 @@ export default App;
 //caso queira criar um componente para a img
 //Não precisa colocar a view pq é um único componente
 
-class MinhaImage extends Component{
-  render(){
+class MinhaImage extends Component{ // o que compõe a view, algo que pode ser reutilizado
+  render(){                         // posso reutilizar um componente estilizando-o de várias formas
 
     let img = 'url da imagem';
     return(
